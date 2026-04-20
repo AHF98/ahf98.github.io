@@ -3,380 +3,372 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>AmirHossein Fallah — Physicist & AI Researcher</title>
-<meta name="description" content="AmirHossein Fallah Zarrinkar — Physicist, mathematician, and AI researcher. Expert Project Manager and Physics Team Lead at Mercor AI." />
+<title>AmirHossein Fallah Zarrinkar</title>
+<meta name="description" content="AmirHossein Fallah Zarrinkar — physicist and AI researcher. Expert Project Manager and Physics Team Lead at Mercor AI. MSc Physics, Université de Montréal." />
+<meta name="author" content="AmirHossein Fallah Zarrinkar" />
+<meta property="og:title" content="AmirHossein Fallah Zarrinkar" />
+<meta property="og:description" content="Physicist and AI researcher. Expert Project Manager and Physics Team Lead at Mercor AI." />
+<meta property="og:type" content="profile" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
   :root {
-    --bg: #0a0d1a;
-    --bg-2: #0f1328;
-    --panel: #141a35;
-    --panel-2: #1b2248;
-    --border: #262c55;
-    --border-soft: #1f2547;
-    --text: #e8ecff;
-    --muted: #9aa3c7;
-    --muted-2: #6d7aa8;
-    --accent: #7c9cff;
-    --accent-2: #5ce1a1;
-    --accent-3: #c084fc;
-    --shadow: 0 20px 60px rgba(0,0,0,0.4);
+    --bg: #0b0d12;
+    --bg-2: #11141c;
+    --panel: #151925;
+    --panel-2: #1a1f2e;
+    --border: #252b3d;
+    --border-soft: #1d2232;
+    --text: #e5e7ef;
+    --text-2: #c9cdd9;
+    --muted: #8b91a6;
+    --muted-2: #5d6378;
+    --accent: #9eb4ff;
+    --accent-soft: rgba(158, 180, 255, 0.12);
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background:
-      radial-gradient(1400px 800px at 85% -10%, rgba(124,156,255,0.12), transparent 60%),
-      radial-gradient(1000px 700px at 10% 10%, rgba(192,132,252,0.08), transparent 60%),
-      var(--bg);
+    font-family: var(--sans);
+    background: var(--bg);
     color: var(--text);
-    line-height: 1.6;
+    line-height: 1.65;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    font-size: 15px;
   }
-  a { color: var(--accent); text-decoration: none; transition: color 0.15s; }
-  a:hover { color: var(--accent-2); }
-  code, .mono { font-family: 'JetBrains Mono', monospace; }
+  a { color: var(--accent); text-decoration: none; transition: color 0.15s, border-color 0.15s; }
+  a:hover { color: var(--text); }
 
-  /* Navigation */
+  /* Nav */
   nav {
     position: sticky;
     top: 0;
     z-index: 100;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    background: rgba(10, 13, 26, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background: rgba(11, 13, 18, 0.8);
     border-bottom: 1px solid var(--border-soft);
   }
   .nav-inner {
-    max-width: 1100px;
+    max-width: 1040px;
     margin: 0 auto;
-    padding: 14px 24px;
+    padding: 16px 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .logo {
-    font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 0.5px;
-    background: linear-gradient(135deg, var(--accent), var(--accent-3));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    color: var(--text);
   }
+  .logo em { font-style: italic; color: var(--accent); }
   .nav-links {
     display: flex;
-    gap: 24px;
+    gap: 28px;
     list-style: none;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 500;
   }
-  .nav-links a { color: var(--muted); font-weight: 500; }
+  .nav-links a {
+    color: var(--muted);
+    letter-spacing: 0.3px;
+  }
   .nav-links a:hover { color: var(--text); }
-  @media (max-width: 640px) { .nav-links { display: none; } }
+  @media (max-width: 680px) { .nav-links { display: none; } }
 
-  /* Containers */
-  main { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-  section { padding: 72px 0 32px; }
-  @media (max-width: 640px) { section { padding: 48px 0 16px; } }
+  main { max-width: 1040px; margin: 0 auto; padding: 0 28px; }
+  section { padding: 88px 0 24px; }
+  @media (max-width: 680px) { section { padding: 56px 0 16px; } }
 
   /* Hero */
-  .hero { padding: 80px 0 40px; position: relative; }
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 40px;
+  .hero { padding: 96px 0 56px; }
+  .hero-top {
+    display: flex;
     align-items: center;
-  }
-  @media (max-width: 780px) { .hero-grid { grid-template-columns: 1fr; } }
-  .badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    gap: 12px;
+    margin-bottom: 28px;
     font-size: 12px;
-    padding: 6px 12px;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    background: rgba(124,156,255,0.08);
     color: var(--muted);
+    font-family: var(--mono);
+    letter-spacing: 0.4px;
+  }
+  .hero-top .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #5ce1a1;
+    box-shadow: 0 0 10px rgba(92, 225, 161, 0.6);
+  }
+  .hero-top .sep { color: var(--muted-2); }
+  h1.name {
+    font-family: var(--serif);
     font-weight: 500;
-    margin-bottom: 22px;
-  }
-  .badge .dot {
-    width: 7px; height: 7px; border-radius: 50%;
-    background: var(--accent-2);
-    box-shadow: 0 0 8px var(--accent-2);
-    animation: pulse 2.2s ease-in-out infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.55; transform: scale(1.4); }
-  }
-  .hero h1 {
-    font-size: clamp(36px, 6vw, 62px);
+    font-size: clamp(40px, 6.5vw, 64px);
     line-height: 1.05;
-    font-weight: 800;
     letter-spacing: -1.5px;
-    margin-bottom: 14px;
+    margin-bottom: 18px;
+    color: var(--text);
   }
-  .hero h1 .accent {
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-3) 55%, var(--accent-2) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  h1.name em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--accent);
   }
-  .hero .title {
-    font-size: 18px;
-    color: var(--muted);
-    margin-bottom: 14px;
-    font-weight: 500;
+  .role {
+    font-size: 16px;
+    color: var(--text-2);
+    margin-bottom: 32px;
+    max-width: 640px;
+    font-weight: 400;
   }
-  .hero .title strong { color: var(--text); font-weight: 600; }
-  .hero .blurb {
+  .role strong { color: var(--text); font-weight: 600; }
+  .bio {
     font-size: 16px;
     color: var(--muted);
-    max-width: 620px;
-    margin-bottom: 28px;
+    max-width: 640px;
+    line-height: 1.75;
+    margin-bottom: 36px;
   }
-  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .bio a {
+    color: var(--text-2);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1px;
+  }
+  .bio a:hover { color: var(--accent); border-color: var(--accent); }
+
+  .cta-row { display: flex; gap: 10px; flex-wrap: wrap; }
   .btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 11px 18px;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 13.5px;
+    font-weight: 500;
+    font-family: var(--sans);
     border: 1px solid var(--border);
-    background: var(--panel-2);
-    color: var(--text);
+    background: transparent;
+    color: var(--text-2);
     cursor: pointer;
     transition: all 0.18s;
+    letter-spacing: 0.1px;
   }
-  .btn:hover { transform: translateY(-1px); border-color: var(--accent); color: var(--text); }
+  .btn:hover { border-color: var(--accent); color: var(--text); background: var(--accent-soft); }
   .btn.primary {
-    background: linear-gradient(135deg, var(--accent), #5e7ef0);
-    border-color: transparent;
-    color: #0b0f24;
+    background: var(--text);
+    border-color: var(--text);
+    color: var(--bg);
   }
-  .btn.primary:hover { filter: brightness(1.1); color: #0b0f24; }
-  .btn svg { width: 16px; height: 16px; }
+  .btn.primary:hover { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .btn svg { width: 14px; height: 14px; }
 
-  .avatar {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-3) 50%, var(--accent-2) 100%);
-    padding: 3px;
-    box-shadow: var(--shadow);
-    flex-shrink: 0;
-  }
-  .avatar-inner {
-    width: 100%; height: 100%;
-    border-radius: 50%;
-    background: var(--bg-2);
+  /* Section headers */
+  .section-head {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 64px;
-    font-weight: 800;
-    letter-spacing: -2px;
-    background: linear-gradient(135deg, var(--panel), var(--bg-2));
-  }
-  .avatar-inner span {
-    background: linear-gradient(135deg, var(--accent), var(--accent-3));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  /* Sections */
-  .section-title {
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--accent);
-    margin-bottom: 8px;
-  }
-  .section-header {
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: -0.8px;
-    margin-bottom: 32px;
-  }
-
-  /* Cards */
-  .card {
-    background: linear-gradient(180deg, var(--panel), var(--panel-2));
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 22px 24px;
-    transition: border-color 0.2s, transform 0.2s;
-  }
-  .card:hover { border-color: var(--accent); }
-  .card-grid { display: grid; gap: 16px; }
-  .card-grid.two { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
-
-  .card-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    align-items: baseline;
     gap: 16px;
-    margin-bottom: 6px;
-    flex-wrap: wrap;
+    margin-bottom: 36px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border-soft);
   }
-  .card h3 {
-    font-size: 17px;
-    font-weight: 600;
-  }
-  .card .date {
-    font-size: 13px;
-    color: var(--muted-2);
-    font-family: 'JetBrains Mono', monospace;
-    white-space: nowrap;
-  }
-  .card .org {
-    font-size: 14px;
-    color: var(--accent);
-    margin-bottom: 10px;
-    font-weight: 500;
-  }
-  .card .meta {
-    font-size: 13px;
-    color: var(--muted);
-    margin-bottom: 8px;
-  }
-  .card p { font-size: 14px; color: var(--muted); }
-  .card ul { list-style: none; padding-left: 0; }
-  .card ul li {
-    font-size: 14px;
-    color: var(--muted);
-    padding-left: 18px;
-    position: relative;
-    margin-top: 6px;
-  }
-  .card ul li::before {
-    content: "▹";
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-  }
-
-  /* Tags */
-  .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
-  .tag {
-    display: inline-block;
-    padding: 4px 10px;
+  .section-num {
+    font-family: var(--mono);
     font-size: 12px;
-    background: rgba(124,156,255,0.1);
-    border: 1px solid rgba(124,156,255,0.25);
-    border-radius: 6px;
-    color: var(--accent);
-    font-family: 'JetBrains Mono', monospace;
+    color: var(--muted-2);
+    letter-spacing: 1px;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    color: var(--text);
   }
 
-  /* Skills groups */
-  .skills-grid {
+  /* Entries (experience/education) */
+  .entries { display: flex; flex-direction: column; }
+  .entry {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 16px;
+    grid-template-columns: 160px 1fr;
+    gap: 28px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border-soft);
   }
-  .skill-group h4 {
-    font-size: 13px;
+  .entry:last-child { border-bottom: none; }
+  @media (max-width: 720px) {
+    .entry { grid-template-columns: 1fr; gap: 8px; }
+  }
+  .entry-date {
+    font-family: var(--mono);
+    font-size: 12px;
     color: var(--muted);
+    letter-spacing: 0.4px;
+    padding-top: 4px;
+  }
+  .entry-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 3px;
+    letter-spacing: -0.1px;
+  }
+  .entry-org {
+    font-size: 14px;
+    color: var(--accent);
     margin-bottom: 12px;
     font-weight: 500;
+  }
+  .entry-meta {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 10px;
+    font-family: var(--mono);
+  }
+  .entry-meta strong { color: var(--text-2); font-family: var(--sans); font-weight: 600; }
+  .entry-desc {
+    font-size: 14.5px;
+    color: var(--text-2);
+    line-height: 1.7;
+  }
+  .entry-desc em { color: var(--muted); font-style: italic; }
+
+  /* Skills */
+  .skills {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 28px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-soft);
+    align-items: baseline;
+  }
+  .skills:last-of-type { border-bottom: none; }
+  @media (max-width: 720px) {
+    .skills { grid-template-columns: 1fr; gap: 10px; }
+  }
+  .skills-label {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.5px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    font-size: 14px;
+    color: var(--text-2);
+  }
+  .skills-list span { position: relative; }
+  .skills-list span:not(:last-child)::after {
+    content: "·";
+    position: absolute;
+    right: -10px;
+    color: var(--muted-2);
   }
 
   /* Awards */
-  .awards-list { display: grid; gap: 8px; }
-  .award {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    padding: 14px 18px;
-    background: var(--panel);
-    border: 1px solid var(--border-soft);
-    border-radius: 10px;
-    transition: border-color 0.15s;
+  .awards { list-style: none; }
+  .awards li {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 24px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-soft);
+    align-items: baseline;
   }
-  .award:hover { border-color: var(--accent); }
-  .award-text { font-size: 14px; color: var(--text); }
-  .award-text .year { color: var(--muted-2); font-family: 'JetBrains Mono', monospace; font-size: 12px; margin-right: 10px; }
-  .award-icon {
-    font-size: 18px;
-    flex-shrink: 0;
+  .awards li:last-child { border-bottom: none; }
+  .awards .year {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
   }
-
-  /* Projects */
-  .project {
-    display: block;
-    color: var(--text);
+  .awards .what {
+    font-size: 14.5px;
+    color: var(--text-2);
   }
-  .project:hover { color: var(--text); transform: translateY(-2px); }
-  .project .project-icon {
-    width: 40px; height: 40px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, var(--accent), var(--accent-3));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    margin-bottom: 14px;
-  }
+  .awards .what strong { color: var(--text); font-weight: 600; }
+  .awards .what .sub { color: var(--muted); font-size: 13.5px; }
 
   /* References */
-  .ref-card { padding: 18px 20px; }
-  .ref-card h4 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
-  .ref-card .role { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
-  .ref-card a { font-size: 13px; font-family: 'JetBrains Mono', monospace; word-break: break-all; }
+  .refs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .ref {
+    padding: 20px 22px;
+    border: 1px solid var(--border-soft);
+    border-radius: 10px;
+    background: var(--panel);
+    transition: border-color 0.18s;
+  }
+  .ref:hover { border-color: var(--border); }
+  .ref h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--text);
+  }
+  .ref .role-txt {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .ref a {
+    font-family: var(--mono);
+    font-size: 12px;
+    word-break: break-all;
+  }
 
   /* Footer */
   footer {
-    padding: 48px 0 36px;
-    text-align: center;
+    padding: 64px 0 48px;
+    margin-top: 64px;
     border-top: 1px solid var(--border-soft);
-    margin-top: 48px;
-    color: var(--muted);
     font-size: 13px;
-  }
-  footer .socials {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-bottom: 20px;
-  }
-  footer .socials a {
-    width: 40px; height: 40px;
-    border-radius: 50%;
-    border: 1px solid var(--border);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     color: var(--muted);
-    transition: all 0.15s;
   }
-  footer .socials a:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
-  footer .socials svg { width: 18px; height: 18px; }
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer-left span { color: var(--muted-2); margin: 0 8px; }
+  .footer-socials { display: flex; gap: 14px; }
+  .footer-socials a {
+    color: var(--muted);
+    display: inline-flex;
+    width: 36px; height: 36px;
+    align-items: center; justify-content: center;
+    border: 1px solid var(--border-soft);
+    border-radius: 6px;
+    transition: all 0.18s;
+  }
+  .footer-socials a:hover { color: var(--text); border-color: var(--accent); }
+  .footer-socials svg { width: 15px; height: 15px; }
 </style>
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
-    <div class="logo">AHF.</div>
+    <div class="logo">A<em>HF.</em></div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#awards">Awards</a></li>
     </ul>
   </div>
 </nav>
@@ -385,281 +377,340 @@
 
   <!-- HERO -->
   <section class="hero" id="about">
-    <div class="hero-grid">
-      <div>
-        <div class="badge"><span class="dot"></span> Currently @ Mercor AI · Montréal</div>
-        <h1>Hi, I'm <span class="accent">AmirHossein</span>.</h1>
-        <div class="title"><strong>Expert Project Manager · Physics Team Lead · AI Researcher</strong></div>
-        <p class="blurb">
-          Physicist and mathematician working at the intersection of fundamental science and AI.
-          I lead physics and math evaluation teams at Mercor AI, helping train frontier LLMs from
-          OpenAI, Google DeepMind, Anthropic, and Meta on complex scientific reasoning.
-          MSc in Physics from Université de Montréal; BSc in Physics & Mathematics (Rank 1, summa cum laude) from U. of Guilan.
-        </p>
-        <div class="cta-row">
-          <a class="btn primary" href="CV_AmirHosseinFallah_GT.pdf" download>
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"/></svg>
-            Download CV
-          </a>
-          <a class="btn" href="mailto:amir.deepmind@gmail.com">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            Email
-          </a>
-          <a class="btn" href="https://github.com/AHF98" target="_blank" rel="noopener">
-            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.1-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
-            GitHub
-          </a>
-        </div>
-      </div>
-      <div class="avatar">
-        <div class="avatar-inner"><span>AH</span></div>
-      </div>
+    <div class="hero-top">
+      <span class="dot"></span>
+      <span>Available for collaboration</span>
+      <span class="sep">/</span>
+      <span>Montréal, QC</span>
+    </div>
+    <h1 class="name">AmirHossein <em>Fallah Zarrinkar</em></h1>
+    <p class="role">
+      <strong>Expert Project Manager</strong> and <strong>Physics Team Lead</strong> at Mercor AI.
+      Physicist and mathematician working at the intersection of fundamental science and machine learning.
+    </p>
+    <p class="bio">
+      I hold a Master's in Physics from <a href="https://www.umontreal.ca/" target="_blank" rel="noopener">Université de Montréal</a>, where my research under
+      <a href="https://witczak-krempa.umontreal.ca/" target="_blank" rel="noopener">Prof. William Witczak-Krempa</a>
+      focused on charged operators in Gross-Neveu family quantum critical points using the large-N expansion.
+      Previously, I completed a double Bachelor's in Physics and Mathematics at the University of Guilan,
+      graduating summa cum laude and ranking first in both programs.
+      Today, my work centers on training and evaluating frontier language models —
+      from OpenAI, Google DeepMind, Anthropic, and Meta — on advanced reasoning in
+      mathematics and physics.
+    </p>
+    <div class="cta-row">
+      <a class="btn primary" href="CV_AmirHosseinFallah_GT.pdf" download>
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"/></svg>
+        Curriculum Vitae
+      </a>
+      <a class="btn" href="mailto:amir.deepmind@gmail.com">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        Email
+      </a>
+      <a class="btn" href="https://github.com/AHF98" target="_blank" rel="noopener">
+        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.1-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        GitHub
+      </a>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
   <section id="experience">
-    <div class="section-title">Experience</div>
-    <h2 class="section-header">Where I've worked</h2>
-    <div class="card-grid">
-      <div class="card">
-        <div class="card-head">
-          <div>
-            <h3>Expert Project Manager · Physics Team Lead · Math Senior Reviewer</h3>
-            <div class="org">Mercor AI</div>
+    <div class="section-head">
+      <span class="section-num">01 /</span>
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <div class="entries">
+
+      <div class="entry">
+        <div class="entry-date">2025 — Present</div>
+        <div>
+          <div class="entry-title">Expert Project Manager · Physics Team Lead · Math Senior Reviewer</div>
+          <div class="entry-org">Mercor AI</div>
+          <div class="entry-desc">
+            Lead physics and mathematics evaluation workstreams for the development of
+            frontier large language models, including systems from OpenAI, Google DeepMind,
+            Anthropic, and Meta. Responsibilities span project coordination, team leadership,
+            technical rubric design, and senior-level quality review across mathematics tasks.
+            Promoted to EPM, Physics Team Lead, and Math Senior Reviewer.
           </div>
-          <div class="date">2025 — Present</div>
         </div>
-        <p>Collaborating on the development of frontier LLMs — including models from OpenAI, Google DeepMind, Anthropic, and Meta — to solve complex mathematics and physics problems. Promoted to EPM, Physics Team Lead, and Math Senior Reviewer.</p>
       </div>
 
-      <div class="card">
-        <div class="card-head">
-          <div>
-            <h3>AI Assessor & Senior Reviewer</h3>
-            <div class="org">Scale AI · Outlier</div>
+      <div class="entry">
+        <div class="entry-date">2024 — Present</div>
+        <div>
+          <div class="entry-title">AI Assessor · Senior Reviewer</div>
+          <div class="entry-org">Scale AI · Outlier</div>
+          <div class="entry-desc">
+            Contributing to the training and evaluation of large language models on advanced
+            mathematics and physics reasoning. Promoted to Senior Reviewer and ORACLE tier
+            based on sustained quality metrics.
           </div>
-          <div class="date">2024 — Present</div>
         </div>
-        <p>Training and evaluating LLMs on advanced mathematics and physics. Promoted to Senior Reviewer and ORACLE tier based on consistent high-quality work and performance metrics.</p>
       </div>
 
-      <div class="card">
-        <div class="card-head">
-          <div>
-            <h3>Teaching Assistant</h3>
-            <div class="org">Université de Montréal · U. of Guilan</div>
+      <div class="entry">
+        <div class="entry-date">2017 — 2024</div>
+        <div>
+          <div class="entry-title">Teaching Assistant</div>
+          <div class="entry-org">Université de Montréal · University of Guilan</div>
+          <div class="entry-desc">
+            Supervised undergraduate physics laboratories, taught scientific computing in
+            Python (NumPy, Matplotlib) for experimental data analysis, and graded coursework
+            across multiple years.
           </div>
-          <div class="date">2017 — 2024</div>
         </div>
-        <p>Supervised physics labs, taught Python (NumPy, Matplotlib) for experimental data analysis, and graded coursework across multiple undergraduate-level courses.</p>
       </div>
 
-      <div class="card">
-        <div class="card-head">
-          <div>
-            <h3>Co-Founder</h3>
-            <div class="org">Sinoacademy</div>
+      <div class="entry">
+        <div class="entry-date">2019 — 2020</div>
+        <div>
+          <div class="entry-title">Co-Founder</div>
+          <div class="entry-org">Sinoacademy</div>
+          <div class="entry-desc">
+            Co-founded an open online-course platform in Persian. Organized a summer school on
+            Physics in Machine Learning with a team of seven instructors, serving over fifty students.
           </div>
-          <div class="date">2019 — 2020</div>
         </div>
-        <p>Co-founded a Persian open online-course start-up. Organized a summer school on "Physics in Machine Learning" with 7 teachers for 50+ students.</p>
       </div>
+
+      <div class="entry">
+        <div class="entry-date">2022</div>
+        <div>
+          <div class="entry-title">Visiting Researcher</div>
+          <div class="entry-org">GGI INFN, Florence · <em style="color:var(--muted); font-style:normal">Bootstrapping Nature program</em></div>
+          <div class="entry-desc">
+            Participant in <em>Bootstrapping Nature: Non-perturbative Approaches to
+            Critical Phenomena</em> at the Galileo Galilei Institute for Theoretical Physics.
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- EDUCATION -->
   <section id="education">
-    <div class="section-title">Education</div>
-    <h2 class="section-header">Academic background</h2>
-    <div class="card-grid">
-      <div class="card">
-        <div class="card-head">
-          <div>
-            <h3>MSc in Physics</h3>
-            <div class="org">Université de Montréal (UdeM)</div>
+    <div class="section-head">
+      <span class="section-num">02 /</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+    <div class="entries">
+
+      <div class="entry">
+        <div class="entry-date">2022 — 2024</div>
+        <div>
+          <div class="entry-title">Master of Science, Physics</div>
+          <div class="entry-org">Université de Montréal</div>
+          <div class="entry-meta"><strong>GPA 4.00 / 4.3</strong></div>
+          <div class="entry-desc">
+            Thesis: <em>Charged operators in Gross-Neveu family quantum critical points
+            using large-N expansion.</em>
+            Advisor: Prof. William Witczak-Krempa — Canada Research Chair in Quantum Phase Transitions.
           </div>
-          <div class="date">2022 — 2024</div>
         </div>
-        <div class="meta">Grade: <strong style="color:var(--text)">4.00 / 4.3</strong></div>
-        <p><em>Thesis:</em> "Charged operators in Gross-Neveu family quantum critical points using large-N expansion."</p>
-        <p style="margin-top:6px">Advisor: Prof. William Witczak-Krempa — Canada Research Chair in Quantum Phase Transitions.</p>
       </div>
 
-      <div class="card">
-        <div class="card-head">
-          <div>
-            <h3>BSc in Physics · Summa cum laude</h3>
-            <div class="org">U. of Guilan · Sharif U. of Tech. · IPM</div>
+      <div class="entry">
+        <div class="entry-date">2016 — 2021</div>
+        <div>
+          <div class="entry-title">Bachelor of Science, Physics — <em style="color:var(--accent); font-style:italic">Summa cum laude</em></div>
+          <div class="entry-org">University of Guilan · Sharif University of Technology · IPM</div>
+          <div class="entry-meta"><strong>18.78 / 20 (4.00 / 4.00)</strong> &nbsp; · &nbsp; <strong>Rank 1</strong> of 75 students</div>
+          <div class="entry-desc">
+            Thesis: <em>The entropy of Hawking radiation — quantum information in
+            black hole evaporation.</em>
+            Advisor: M. Reza Mohammadi Mozaffar.
           </div>
-          <div class="date">2016 — 2021</div>
         </div>
-        <div class="meta">Grade: <strong style="color:var(--text)">18.78 / 20</strong> (4.00 / 4.00) — <strong style="color:var(--accent-2)">Rank 1</strong> of 75 students.</div>
-        <p><em>Thesis:</em> "The entropy of Hawking radiation — quantum information in black hole evaporation."</p>
-        <p style="margin-top:6px">Advisor: M. Reza Mohammadi Mozaffar.</p>
       </div>
 
-      <div class="card">
-        <div class="card-head">
-          <div>
-            <h3>BSc in Mathematics · Summa cum laude</h3>
-            <div class="org">U. of Guilan · IPM</div>
+      <div class="entry">
+        <div class="entry-date">2016 — 2021</div>
+        <div>
+          <div class="entry-title">Bachelor of Science, Mathematics — <em style="color:var(--accent); font-style:italic">Summa cum laude</em></div>
+          <div class="entry-org">University of Guilan · IPM</div>
+          <div class="entry-meta"><strong>18.32 / 20 (3.91 / 4.00)</strong> &nbsp; · &nbsp; <strong>Rank 1</strong> of 55 students</div>
+          <div class="entry-desc">
+            Completed concurrently with the physics degree. Coursework spanned group theory,
+            Lie algebras, topology, measure theory, and differential geometry.
           </div>
-          <div class="date">2016 — 2021</div>
         </div>
-        <div class="meta">Grade: <strong style="color:var(--text)">18.32 / 20</strong> (3.91 / 4.00) — <strong style="color:var(--accent-2)">Rank 1</strong> of 55 students.</div>
-        <p>Simultaneous double major alongside physics.</p>
       </div>
+
     </div>
   </section>
 
   <!-- SKILLS -->
   <section id="skills">
-    <div class="section-title">Toolkit</div>
-    <h2 class="section-header">Skills & interests</h2>
-    <div class="skills-grid">
-      <div class="card skill-group">
-        <h4>Research Interests</h4>
-        <div class="tag-row">
-          <span class="tag">AI for Science</span>
-          <span class="tag">Quantum Computing</span>
-          <span class="tag">Quantum Information</span>
-          <span class="tag">Deep Learning</span>
-          <span class="tag">World Models</span>
-          <span class="tag">V-JEPA</span>
-          <span class="tag">VLMs</span>
-          <span class="tag">Reinforcement Learning</span>
-          <span class="tag">Geometric Deep Learning</span>
-        </div>
-      </div>
+    <div class="section-head">
+      <span class="section-num">03 /</span>
+      <h2 class="section-title">Research Interests & Technical Skills</h2>
+    </div>
 
-      <div class="card skill-group">
-        <h4>Programming & ML</h4>
-        <div class="tag-row">
-          <span class="tag">Python</span>
-          <span class="tag">PyTorch</span>
-          <span class="tag">NumPy</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">scikit-learn</span>
-          <span class="tag">XGBoost</span>
-          <span class="tag">Matplotlib</span>
-          <span class="tag">Mathematica</span>
-          <span class="tag">MATLAB</span>
-          <span class="tag">Fortran</span>
-          <span class="tag">LaTeX</span>
-        </div>
+    <div class="skills">
+      <div class="skills-label">Research Focus</div>
+      <div class="skills-list">
+        <span>AI for Science</span>
+        <span>Quantum Computing</span>
+        <span>Quantum Information</span>
+        <span>Deep Learning</span>
+        <span>World Models</span>
+        <span>V-JEPA</span>
+        <span>Vision-Language Models</span>
+        <span>Reinforcement Learning</span>
+        <span>Geometric Deep Learning</span>
       </div>
+    </div>
 
-      <div class="card skill-group">
-        <h4>Mathematics</h4>
-        <div class="tag-row">
-          <span class="tag">Group Theory</span>
-          <span class="tag">Lie Algebra</span>
-          <span class="tag">Topology</span>
-          <span class="tag">Manifold Geometry</span>
-          <span class="tag">Measure Theory</span>
-          <span class="tag">Numerical Linear Algebra</span>
-        </div>
+    <div class="skills">
+      <div class="skills-label">Programming & ML</div>
+      <div class="skills-list">
+        <span>Python</span>
+        <span>PyTorch</span>
+        <span>NumPy</span>
+        <span>Pandas</span>
+        <span>scikit-learn</span>
+        <span>XGBoost</span>
+        <span>Matplotlib</span>
+        <span>Mathematica</span>
+        <span>MATLAB</span>
+        <span>Fortran</span>
+        <span>LaTeX</span>
       </div>
+    </div>
 
-      <div class="card skill-group">
-        <h4>Physics</h4>
-        <div class="tag-row">
-          <span class="tag">Quantum Field Theory</span>
-          <span class="tag">Condensed Matter</span>
-          <span class="tag">String Theory</span>
-          <span class="tag">Quantum Computing</span>
-        </div>
+    <div class="skills">
+      <div class="skills-label">Mathematics</div>
+      <div class="skills-list">
+        <span>Group Theory & Symmetries</span>
+        <span>Lie Algebras</span>
+        <span>Topology</span>
+        <span>Geometry of Manifolds</span>
+        <span>Measure Theory</span>
+        <span>Numerical Linear Algebra</span>
+        <span>Linear Optimization</span>
+        <span>Probability & Statistics</span>
+      </div>
+    </div>
+
+    <div class="skills">
+      <div class="skills-label">Physics</div>
+      <div class="skills-list">
+        <span>Quantum Field Theory</span>
+        <span>Quantum Condensed Matter</span>
+        <span>String Theory</span>
+        <span>Quantum Computing</span>
+      </div>
+    </div>
+
+    <div class="skills">
+      <div class="skills-label">Certifications</div>
+      <div class="skills-list">
+        <span>Machine Learning Specialization</span>
+        <span>IBM Data Science Professional Certificate</span>
       </div>
     </div>
   </section>
 
   <!-- AWARDS -->
   <section id="awards">
-    <div class="section-title">Recognition</div>
-    <h2 class="section-header">Awards & scholarships</h2>
-    <div class="awards-list">
-      <div class="award">
-        <div class="award-text"><span class="year">2022</span><strong>Fast-track to PhD scholarship</strong> · Université de Montréal · 10,000 CAD</div>
-        <span class="award-icon">🎓</span>
-      </div>
-      <div class="award">
-        <div class="award-text"><span class="year">2022</span><strong>Physics department entrance scholarship</strong> · Université de Montréal · 5,000 CAD</div>
-        <span class="award-icon">🎓</span>
-      </div>
-      <div class="award">
-        <div class="award-text"><span class="year">2019</span><strong>Abrishamchian Prize</strong> — best bachelor student of Guilan University · 1,000 CAD</div>
-        <span class="award-icon">🏆</span>
-      </div>
-      <div class="award">
-        <div class="award-text"><span class="year">2019</span><strong>Ranked 5th</strong> — National University Students Physics Olympiad</div>
-        <span class="award-icon">🥇</span>
-      </div>
-      <div class="award">
-        <div class="award-text"><span class="year">2019</span><strong>Ranked 1st</strong> — North University Student Physics Olympiad</div>
-        <span class="award-icon">🥇</span>
-      </div>
-      <div class="award">
-        <div class="award-text"><span class="year">2018</span><strong>Best physics student</strong> of Guilan University</div>
-        <span class="award-icon">⭐</span>
-      </div>
-      <div class="award">
-        <div class="award-text"><span class="year">2014</span><strong>Semifinalist</strong> — National Physics Olympiad, Young Scholars Club</div>
-        <span class="award-icon">🏅</span>
-      </div>
-      <div class="award">
-        <div class="award-text"><span class="year">2013</span><strong>Iran Science & Technology Park Research Fellowship</strong> — stair-climbing robot · $1,000</div>
-        <span class="award-icon">🤖</span>
-      </div>
-      <div class="award">
-        <div class="award-text"><span class="year">2013</span><strong>Ranked 1st</strong> — Sharif Nadcup Robotics Tournament, MicroMouse</div>
-        <span class="award-icon">🏆</span>
-      </div>
+    <div class="section-head">
+      <span class="section-num">04 /</span>
+      <h2 class="section-title">Awards & Honors</h2>
     </div>
+    <ul class="awards">
+      <li>
+        <div class="year">2022</div>
+        <div class="what"><strong>Fast-track to PhD Scholarship</strong> — Université de Montréal<span class="sub"> · 10,000 CAD</span></div>
+      </li>
+      <li>
+        <div class="year">2022</div>
+        <div class="what"><strong>Physics Department Entrance Scholarship</strong> — Université de Montréal<span class="sub"> · 5,000 CAD</span></div>
+      </li>
+      <li>
+        <div class="year">2019</div>
+        <div class="what"><strong>Abrishamchian Prize</strong> — Best Bachelor Student, University of Guilan<span class="sub"> · 1,000 CAD</span></div>
+      </li>
+      <li>
+        <div class="year">2019</div>
+        <div class="what"><strong>5th Place, National University Students Physics Olympiad</strong></div>
+      </li>
+      <li>
+        <div class="year">2019</div>
+        <div class="what"><strong>1st Place, North University Student Physics Olympiad</strong></div>
+      </li>
+      <li>
+        <div class="year">2018</div>
+        <div class="what"><strong>Best Physics Student</strong> — University of Guilan</div>
+      </li>
+      <li>
+        <div class="year">2014</div>
+        <div class="what"><strong>Semifinalist, National Physics Olympiad</strong> — Young Scholars Club</div>
+      </li>
+      <li>
+        <div class="year">2013</div>
+        <div class="what"><strong>Iran Science & Technology Park Research Fellowship</strong><span class="sub"> · stair-climbing robot — $1,000</span></div>
+      </li>
+      <li>
+        <div class="year">2013</div>
+        <div class="what"><strong>1st Place, Sharif Nadcup Robotics Tournament</strong><span class="sub"> · MicroMouse category</span></div>
+      </li>
+    </ul>
   </section>
 
   <!-- REFERENCES -->
   <section id="references">
-    <div class="section-title">References</div>
-    <h2 class="section-header">Academic references</h2>
-    <div class="card-grid two">
-      <div class="card ref-card">
+    <div class="section-head">
+      <span class="section-num">05 /</span>
+      <h2 class="section-title">References</h2>
+    </div>
+    <div class="refs">
+      <div class="ref">
         <h4>Prof. William Witczak-Krempa</h4>
-        <div class="role">Associate Professor, Université de Montréal</div>
+        <div class="role-txt">Associate Professor, Université de Montréal · Canada Research Chair in Quantum Phase Transitions</div>
         <a href="mailto:w.witczak-krempa@umontreal.ca">w.witczak-krempa@umontreal.ca</a>
       </div>
-      <div class="card ref-card">
+      <div class="ref">
         <h4>Prof. Rufus Boyack</h4>
-        <div class="role">Assistant Professor, Dartmouth College</div>
+        <div class="role-txt">Assistant Professor, Dartmouth College</div>
         <a href="mailto:Rufus.Boyack@dartmouth.edu">Rufus.Boyack@dartmouth.edu</a>
       </div>
-      <div class="card ref-card">
+      <div class="ref">
         <h4>Prof. M. Reza Mohammadi Mozaffar</h4>
-        <div class="role">Associate Prof. U. of Guilan · Resident Researcher at IPM</div>
+        <div class="role-txt">Associate Professor, University of Guilan · Resident Researcher, IPM</div>
         <a href="mailto:mmohammadi@guilan.ac.ir">mmohammadi@guilan.ac.ir</a>
       </div>
-      <div class="card ref-card">
+      <div class="ref">
         <h4>Prof. Hessamaddin Arfaei</h4>
-        <div class="role">Professor at SUT · Founding Fellow of IPM (Retired)</div>
+        <div class="role-txt">Professor, Sharif University of Technology · Founding Fellow, IPM (Retired)</div>
         <a href="mailto:arfaei@sharif.edu">arfaei@sharif.edu</a>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="socials">
-      <a href="https://github.com/AHF98" target="_blank" rel="noopener" aria-label="GitHub">
-        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.1-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
-      </a>
-      <a href="mailto:amir.deepmind@gmail.com" aria-label="Email">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-      </a>
-      <a href="tel:+15146491248" aria-label="Phone">
-        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.28a2 2 0 011.94 1.52l.7 2.8a2 2 0 01-.5 1.9l-1.28 1.28a16 16 0 006.58 6.58l1.28-1.28a2 2 0 011.9-.5l2.8.7A2 2 0 0121 17.72V20a2 2 0 01-2 2h-1C9.72 22 2 14.28 2 5V4z"/></svg>
-      </a>
+    <div class="footer-inner">
+      <div class="footer-left">
+        Montréal, Québec
+        <span>·</span>
+        <a href="mailto:amir.deepmind@gmail.com">amir.deepmind@gmail.com</a>
+        <span>·</span>
+        +1 514 649 1248
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/AHF98" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.1-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        </a>
+        <a href="mailto:amir.deepmind@gmail.com" aria-label="Email">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </a>
+      </div>
     </div>
-    <div>Montréal, QC · <a href="mailto:amir.deepmind@gmail.com">amir.deepmind@gmail.com</a> · +1 514 649 1248</div>
-    <div style="margin-top:10px; color: var(--muted-2);">© <span id="year"></span> AmirHossein Fallah Zarrinkar · Built with care.</div>
+    <div style="margin-top: 22px; color: var(--muted-2); font-size: 12px;">
+      © <span id="year"></span> AmirHossein Fallah Zarrinkar
+    </div>
   </footer>
 
 </main>
